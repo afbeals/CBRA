@@ -18,13 +18,19 @@ Base configuration for a React/Redux application
 ### Build Commands:
 
 <a name="build-commands" ></a>
-To run a local development server on port `8000` with hot reloading (_changes made to code automatically refresh that single component in the browser_) and storybook:
+To run a local development server on port `8000` with mock data and hot reloading enabled (_changes made to code automatically refresh that single component in the browser_):
+
+```bash
+$ npm run local
+```
+
+To run the local environment but fetch data from the development server and run storybook alongside the app:
 
 ```bash
 $ npm run dev
 ```
 
-To build the development enviornment and compile code into **./build**:
+To build the development environment and compile code into **./build**:
 
 ```bash
 $ npm run build
