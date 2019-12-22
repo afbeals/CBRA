@@ -1,0 +1,207 @@
+@mixin listStyles() {
+  &__list {
+    height: 100%;
+    width: 42em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: $app-red;
+    border: $outset-border;
+    box-sizing: border-box;
+    font-size: 1em;
+    &__filters {
+      display: flex;
+      flex-direction: row;
+      padding: 0em 1.35em;
+      align-items: center;
+      &__decor {
+        margin-right: auto;
+        height: 100%;
+        width: 35%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        &__light {
+          width: 3.5em;
+          height: 3.5em;
+          top: 5px;
+          position: relative;
+          .trim {
+            height: 85%;
+            width: 85%;
+            border-radius: 50px;
+            border: 3px solid $color-white;
+            box-shadow: -1px 2px 13px #787575;
+            .bulb {
+              height: 100%;
+              width: 100%;
+              border-radius: 50px;
+              background: #4eb6e8;
+              position: relative;
+              &.loading {
+                animation: loadingData 0.5s infinite;
+              }
+              &:after {
+                content: "";
+                position: absolute;
+                width: 50%;
+                height: 25%;
+                background: #90ceecc4;
+                left: 0;
+                top: 0;
+                transform: translateX(79%) translateY(40%) rotate(30deg);
+                border-radius: 37%;
+              }
+              &:before {
+                content: "";
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                border-radius: 50px;
+                background: #f5f5f547;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: auto;
+                margin-bottom: auto;
+                box-shadow: 1px 1px 12px #ffffff;
+              }
+            }
+          }
+        }
+        &__sound {
+          width: 50px;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          .bar {
+            height: 40%;
+            width: 10%;
+            background: #000000bf;
+            border-radius: 5px;
+            border: 2px inset #676767;
+          }
+        }
+      }
+      .MuiFormControl {
+        &-root {
+          margin-left: auto;
+          box-shadow: -1px 1px 1px #8e8888;
+          .MuiFormLabel-root {
+            font-size: 1em;
+          }
+          .MuiInputBase-root {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+    &__pokemon {
+      display: flex;
+      align-items: initial;
+      flex-wrap: wrap;
+      overflow-y: scroll;
+      height: 100%;
+      border: $inset-border;
+      margin: 15px;
+      background: $color-white;
+      &__item {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        background: $app-primary;
+        width: 49%;
+        height: fit-content;
+        font-size: 1.25em;
+        text-transform: capitalize;
+        transition: background 0.25s;
+        overflow: hidden;
+        box-sizing: border-box;
+        margin: 4px 0px;
+        margin-left: 5px;
+        &:hover {
+          background: $app-secondary;
+        }
+        &:nth-child(even) {
+          margin-left: auto;
+          &:after {
+            content: "";
+            position: absolute;
+            bottom: -1.2em;
+            right: -1.85em;
+            left: initial;
+            border-top: 1.45em solid $color-white;
+            border-left: 1.45em solid $color-white;
+            border-right: 1.45em solid $color-white;
+            width: 2em;
+            transform: rotate(-44deg);
+            height: 0;
+          }
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: -1.2em;
+          left: -1.85em;
+          border-top: 1.45em solid $color-white;
+          border-left: 1.45em solid $color-white;
+          border-right: 1.45em solid $color-white;
+          width: 2em;
+          transform: rotate(44deg);
+          height: 0;
+        }
+        button {
+          background: none;
+          border: 2px outset $border-color;
+          outline: none;
+          display: flex;
+          flex-direction: row;
+          height: 100%;
+          width: 100%;
+          color: $font-color-white;
+          font-weight: 700;
+          font-size: 1.2em;
+          text-transform: capitalize;
+          font-family: cursive;
+          cursor: pointer;
+          padding: 0.75em 0.25em 0.75em 0.5em;
+          .name {
+            flex-grow: 1;
+            display: flex;
+            align-items: flex-end;
+            &__pre {
+              font-size: 0.65em;
+              letter-spacing: 1px;
+            }
+            &__data {
+              border-bottom: 1px solid $font-color-white;
+              font-style: italic;
+              flex-grow: 1;
+              text-align: left;
+              padding-left: 0.5em;
+              margin-right: 0.75em;
+            }
+          }
+          .pId {
+            display: flex;
+            align-items: flex-end;
+            margin: 0px 5px;
+            &__pre {
+              font-size: 0.65em;
+              letter-spacing: 1px;
+            }
+            &__data {
+              border-bottom: 1px solid $font-color-white;
+              text-align: center;
+              font-style: italic;
+            }
+          }
+        }
+      }
+    }
+  }
+}

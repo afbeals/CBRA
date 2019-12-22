@@ -1,0 +1,141 @@
+.page {
+  $page: &;
+  $pageHeader: #{$page}__header;
+  $pageBody: #{$page}__body;
+  font-size: 1rem;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  @include for-xLarge {
+    font-size: 1.7rem;
+  }
+  @include for-large {
+    font-size: 1rem;
+  }
+  @include for-medium {
+    font-size: 0.75rem;
+  }
+  @include for-small {
+    font-size: 0.75rem;
+  }
+  @include for-xSmall {
+    font-size: 0.75rem;
+  }
+  &__header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    &__title {
+      background: $color-white;
+      display: inline-block;
+      padding: 0.65em 1em 0.65em 2em;
+      border-radius: 0em 1em 1em 0em;
+      box-shadow: 1px 1px 4px #989898;
+      margin-top: 10px;
+      transform: translateX(-1.5em);
+      transition: transform 1.5s;
+      cursor: pointer;
+      font-size: 1.25em;
+      position: relative;
+      outline: none;
+      &.back {
+        transform: translateX(0em);
+        #{$pageHeader} {
+          &__title {
+            &__content {
+              &--current {
+                opacity: 0;
+              }
+              &--back {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+      &__content {
+        transition: opacity 1s;
+        color: $app-primary-dark;
+        font-size: 1.25em;
+        &--back {
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $app-secondary-dark;
+        }
+      }
+    }
+  }
+  &__body {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__exit {
+    #{$pageHeader} {
+      &__title {
+        transform: translateX(-9em);
+      }
+    }
+    &__active {
+      #{$pageBody} {
+        animation: pageExit 3s forwards;
+      }
+      #{$pageHeader} {
+        &__title {
+          animation: titleExit 1s ease-in forwards;
+        }
+      }
+    }
+    &__done {
+      #{$pageHeader} {
+        &__title {
+          transform: translateX(-9em);
+        }
+      }
+    }
+  }
+  &__enter {
+    #{$pageBody} {
+      opacity: 0;
+    }
+    &__active {
+      #{$pageBody} {
+        animation: pageEnter 0.75s forwards;
+        animation-delay: 0.75s;
+      }
+      #{$pageHeader} {
+        &__title {
+          opacity: 0;
+        }
+      }
+    }
+    &__done {
+      #{$pageBody} {
+        opacity: 1;
+      }
+      #{$pageHeader} {
+        &__title {
+          animation: titleEnter 1s ease-in;
+        }
+      }
+      // #{$pageHeader} {
+      //   animation: fadeIn 0.75s forwards;
+      //   animation-delay: 3s forwards;
+      // }
+    }
+  }
+}

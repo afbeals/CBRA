@@ -1,0 +1,141 @@
+@mixin regionStyles() {
+  &__regions {
+    padding: 5px 12px;
+    background: $app-red;
+    width: 18em;
+    height: 100%;
+    box-sizing: border-box;
+    border: $outset-border;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    &__decor {
+      margin-right: auto;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 3px;
+      &__light {
+        width: 1em;
+        height: 1em;
+        margin-right: 5px;
+        .trim {
+          height: 70%;
+          width: 70%;
+          border-radius: 50px;
+          border: 2px solid $color-white;
+          box-shadow: -1px 2px 9px #787575;
+          .bulb {
+            height: 100%;
+            width: 100%;
+            border-radius: 50px;
+            background: #4eb6e8;
+            position: relative;
+            &:after {
+              content: "";
+              position: absolute;
+              width: 50%;
+              height: 25%;
+              background: #90ceecc4;
+              left: 0;
+              top: 0;
+              transform: translateX(79%) translateY(40%) rotate(30deg);
+              border-radius: 37%;
+            }
+            &.red {
+              background: #e84e4e;
+              &:after {
+                background: #ec9090c4;
+              }
+            }
+            &.yellow {
+              background: #dfe84e;
+              &:after {
+                background: #deec90c4;
+              }
+            }
+            &.green {
+              background: #58e84e;
+              &:after {
+                background: #90ecacc4;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__list {
+      overflow-x: hidden;
+      overflow-y: auto;
+      height: 95%;
+      padding: 5px;
+      border: $inset-border;
+      background: $color-white;
+      &::-webkit-scrollbar-track {
+        visibility: hidden;
+        width: 0;
+      }
+      &::-webkit-scrollbar {
+        visibility: hidden;
+        width: 0;
+      }
+      &::-webkit-scrollbar-thumb {
+        visibility: hidden;
+        width: 0;
+      }
+      &__region {
+        opacity: 0;
+        background: $color-white;
+        box-shadow: 0px 2px 2px $shadow-color;
+        border-top: 1px solid #ececec;
+        border-left: 1px solid #ececec;
+        border-bottom: 1px solid #ececec;
+        transform-origin: right center;
+        overflow: hidden;
+        min-width: 180px;
+        &__button {
+          font-size: 1.25em;
+          background: $color-white;
+          padding: 0.5em 0.25em;
+          color: $font-color-black;
+          text-transform: capitalize;
+          cursor: pointer;
+          border: none;
+          height: 100%;
+          width: 100%;
+          transition: background 0.5s;
+          outline: none;
+          &.active {
+            background: $app-primary;
+            color: $font-color-white;
+            text-shadow: 1px 1px $shadow-color;
+            cursor: initial;
+            z-index: 1;
+          }
+          &:hover:not(.active) {
+            background: $app-secondary-light;
+            transition: background 0.5s;
+          }
+        }
+        &.noAnim {
+          animation: none !important;
+          opacity: 1 !important;
+        }
+        &.appear {
+          &__active {
+            animation: regionFadeIn 2s cubic-bezier(0.075, 0.82, 0.165, 1)
+              forwards;
+            @include regionDelay(20, 0.2s);
+          }
+          &__done {
+            transform: translateY(0em) scale(1);
+            transform-origin: right center;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

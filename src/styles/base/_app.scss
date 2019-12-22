@@ -1,0 +1,55 @@
+html {
+  font-size: 16px;
+  color: $font-color-black;
+  h1 {
+    font-size: 2rem;
+    text-transform: capitalize;
+  }
+  h2 {
+    font-size: 1.7rem;
+    text-transform: capitalize;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.3rem;
+  }
+  h5 {
+    font-size: 1.1rem;
+  }
+  body {
+    #root {
+      height: 100vh;
+      width: 100vw;
+      #app {
+        background: $app-background;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  * {
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+      background-color: transparent;
+    }
+    &::-webkit-scrollbar {
+      width: 10px;
+      background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $app-secondary;
+      background-image: -webkit-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.2) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0.2) 75%,
+        transparent 75%,
+        transparent
+      );
+    }
+  }
+}

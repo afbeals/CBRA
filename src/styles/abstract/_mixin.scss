@@ -1,0 +1,41 @@
+// Media Queries
+@mixin for-xSmall {
+  @media (min-width: #{$xs-screen}) and (max-width: #{$sm-screen - 1px}) {
+    @content;
+  }
+}
+
+@mixin for-small {
+  @media (min-width: #{$sm-screen}) and (max-width: #{$md-screen - 1px}) {
+    @content;
+  }
+}
+
+@mixin for-medium {
+  @media (min-width: #{$md-screen}) and (max-width: #{$lg-screen - 1px}) {
+    @content;
+  }
+}
+
+@mixin for-large {
+  @media (min-width: #{$lg-screen}) and (max-width: #{$xl-screen - 1px}) {
+    @content;
+  }
+}
+
+@mixin for-xLarge {
+  @media (min-width: #{$xl-screen}) {
+    @content;
+  }
+}
+
+// browser support
+@mixin firefox-only {
+  @at-root {
+    @-moz-document url-prefix() {
+      & {
+        @content;
+      }
+    }
+  }
+}

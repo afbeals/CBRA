@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Details should match Details to snapshot 1`] = `
+<div
+  class="parent__details"
+  data-testid="details"
+>
+  <div
+    class="parent__details__title"
+    data-testid="details-title"
+  >
+    <h3
+      class="parent__details__title__name"
+    />
+    <h3
+      class="parent__details__title__id"
+    />
+  </div>
+  <div
+    class="parent__details__image"
+    data-testid="details-image"
+  >
+    <div
+      class="parent__details__image__gender"
+    >
+      <button
+        class="MuiButtonBase-root MuiIconButton-root male iconButton MuiIconButton-colorSecondary Mui-disabled MuiIconButton-sizeSmall Mui-disabled"
+        data-testid="iconButton"
+        disabled=""
+        role="button"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="MuiIconButton-label"
+        >
+          <i
+            class="fas fa-mars"
+          />
+        </span>
+      </button>
+      <button
+        class="MuiButtonBase-root MuiIconButton-root female iconButton MuiIconButton-colorPrimary Mui-disabled MuiIconButton-sizeSmall Mui-disabled"
+        data-testid="iconButton"
+        disabled=""
+        role="button"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="MuiIconButton-label"
+        >
+          <i
+            class="fas fa-venus"
+          />
+        </span>
+      </button>
+    </div>
+    <div
+      class="parent__details__image__flipper"
+    >
+      <button
+        class="MuiButtonBase-root MuiIconButton-root iconButton MuiIconButton-colorPrimary Mui-disabled MuiIconButton-sizeSmall Mui-disabled"
+        data-testid="iconButton"
+        disabled=""
+        role="button"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="MuiIconButton-label"
+        >
+          <i
+            class="fas fa-sync-alt"
+          />
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    class="parent__details__base"
+    data-testid="details-baseStats"
+  >
+    <div
+      class="parent__details__base__info"
+    >
+      <div
+        class="section section--info"
+      >
+        <span
+          class="section__title"
+        >
+          height:
+        </span>
+        <p
+          class="section__content"
+        />
+      </div>
+      <div
+        class="section section--info"
+      >
+        <span
+          class="section__title"
+        >
+          weight:
+        </span>
+        <p
+          class="section__content"
+        />
+      </div>
+      <div
+        class="section section--types"
+      />
+    </div>
+  </div>
+  <div
+    class="parent__details__abilities"
+    data-testid="details-abilites"
+  >
+    <div
+      class="section"
+    >
+      <p
+        class="section__title"
+      >
+        abilities
+      </p>
+      <ul
+        class="section__list"
+      />
+    </div>
+  </div>
+  <div
+    class="parent__details__stats"
+    data-testid="details-stats"
+  >
+    <ul
+      class="parent__details__stats__list"
+    />
+  </div>
+</div>
+`;

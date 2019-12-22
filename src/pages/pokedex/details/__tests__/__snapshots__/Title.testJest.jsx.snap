@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title should match Title to snapshot 1`] = `
+<div
+  class="parent__title"
+  data-testid="details-title"
+>
+  <h3
+    class="parent__title__name"
+  />
+  <h3
+    class="parent__title__id"
+  />
+</div>
+`;

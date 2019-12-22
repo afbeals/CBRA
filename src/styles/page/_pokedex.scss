@@ -1,0 +1,26 @@
+// Animations
+@import "./pokedex/animations";
+// Mixins
+@import "./pokedex/mixins";
+// Partials
+@import "./pokedex/regions";
+@import "./pokedex/list";
+@import "./pokedex/hinge";
+@import "./pokedex/details";
+
+.pokedex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-size: 1em;
+  justify-content: center;
+  max-height: 35em;
+  position: relative;
+  filter: drop-shadow(0px 4px 4px black);
+  @include regionStyles();
+  @include listStyles();
+  @include hingeStyles();
+  @include detailsStyles();
+}

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Panel should render Panel 1`] = `
+<div
+  class="custom panel"
+  data-testid="panel"
+>
+  <h2
+    class="panel__header"
+  >
+    panel
+  </h2>
+  <div
+    class="panel__body"
+  >
+    children
+  </div>
+</div>
+`;

@@ -1,0 +1,52 @@
+@keyframes regionFadeIn {
+  0% {
+    transform: translateY(-1em) scale(1);
+    transform-origin: left center;
+    opacty: 0;
+  }
+  100% {
+    transform: translateY(0em) scale(1);
+    transform-origin: left center;
+    opacity: 1;
+  }
+}
+
+@keyframes regionFadeOut {
+  100% {
+    transform: translateY(-1em) scale(1);
+    transform-origin: left center;
+    opacty: 0;
+  }
+  0% {
+    transform: translateY(-1em) scale(1);
+    transform-origin: left center;
+    opacity: 1;
+  }
+}
+
+@keyframes statsBackgroundIn {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes loadingData {
+  0% {
+    background: #63beea;
+  }
+  25% {
+    background: #2db2f2;
+  }
+  60% {
+    background: #94dafc;
+  }
+  82% {
+    background: #a9ddf6;
+  }
+  100% {
+    background: #41b8f2;
+  }
+}

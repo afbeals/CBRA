@@ -1,0 +1,9 @@
+{
+    "generator-node": {
+      "promptValues": {
+        "authorName": "Allan Beals-Gibson",
+        "authorEmail": "allan.beals-gibson@cdk.com",
+        "authorUrl": ""
+      }
+    }
+  }

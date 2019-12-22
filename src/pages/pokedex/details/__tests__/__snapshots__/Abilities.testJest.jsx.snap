@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Abilities should match Abilities to snapshot 1`] = `
+<div
+  class="parent__abilities"
+  data-testid="details-abilites"
+>
+  <div
+    class="section"
+  >
+    <p
+      class="section__title"
+    >
+      abilities
+    </p>
+    <ul
+      class="section__list"
+    />
+  </div>
+</div>
+`;

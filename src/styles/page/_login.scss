@@ -1,0 +1,29 @@
+.login {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  &__group {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: $shadow;
+    padding: 1.5em 2.5em;
+    border-radius: 5px;
+    border: 1px solid #dedede;
+    &__title {
+      text-align: center;
+      padding: 0.75em 0em;
+      font-family: cursive;
+      font-size: 2.5em;
+      color: $app-secondary-dark;
+      &__version {
+        font-size: 0.65em;
+        color: $app-primary-light;
+      }
+    }
+  }
+}

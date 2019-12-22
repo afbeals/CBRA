@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hinge should create Hinge 1`] = `
+<div
+  class="parent__hinge"
+  data-testid="pokedex-hinge"
+>
+  <div
+    class="parent__hinge__cylinder"
+  >
+    <div
+      class="parent__hinge__cylinder__section parent__hinge__cylinder__section--top"
+    />
+    <div
+      class="parent__hinge__cylinder__section parent__hinge__cylinder__section--bottom"
+    />
+  </div>
+</div>
+`;
+
+exports[`Hinge should create alt Hinge 1`] = `
+<div
+  class="parent__hinge alt"
+  data-testid="pokedex-hinge"
+>
+  <div
+    class="parent__hinge__cylinder"
+  >
+    <div
+      class="parent__hinge__cylinder__section parent__hinge__cylinder__section--top"
+    />
+    <div
+      class="parent__hinge__cylinder__section parent__hinge__cylinder__section--bottom"
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StatsDisplay should match StatsDisplay to snapshot 1`] = `
+<div
+  class="parent__stats"
+  data-testid="details-stats"
+>
+  <ul
+    class="parent__stats__list"
+  />
+</div>
+`;

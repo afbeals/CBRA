@@ -1,0 +1,120 @@
+{
+  "mon": {
+    "1": {
+      "name": "bulbasaur",
+      "height": 7,
+      "abilities": [
+        {
+          "ability": {
+            "name": "chlorophyll",
+            "url": "/ability/34/"
+          }
+        }
+      ],
+      "base_experience": 64,
+      "forms": [
+        {
+          "name": "bulbasaur",
+          "url": "/pokemon-form/1/"
+        }
+      ],
+      "held_items": [],
+      "id": 1,
+      "moves": [
+        {
+          "move": {
+            "name": "razor-wind",
+            "url": "move/13/"
+          }
+        }
+      ],
+      "location_area_encounters": "/pokemon/1/encounters",
+      "order": 1,
+      "sprites": {
+        "back_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png",
+        "back_female": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png",
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+        "front_female": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+      },
+      "stats": [
+        {
+          "base_stat": 445,
+          "stat": {
+            "name": "speed",
+            "url": "https://pokeapi.co/api/v2/stat/6/"
+          }
+        },
+        {
+          "base_stat": 55,
+          "stat": {
+            "name": "special-attack",
+            "url": "https://pokeapi.co/api/v2/stat/6/"
+          }
+        }
+      ],
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "poison",
+            "url": "https://pokeapi.co/api/v2/type/4/"
+          }
+        },
+        {
+          "slot": 2,
+          "type": {
+            "name": "flying",
+            "url": "https://pokeapi.co/api/v2/type/5/"
+          }
+        }
+      ],
+      "weight": 69
+    },
+    "2": {
+      "id": 2,
+      "name": "ivysaur",
+      "height": 13
+    }
+  },
+  "list": {
+    "descriptions": [
+      {
+        "description": "Entire National dex",
+        "language": {
+          "name": "en",
+          "url": "/language/9/"
+        }
+      }
+    ],
+    "id": 1,
+    "is_main_series": true,
+    "name": "national",
+    "names": [
+      {
+        "language": {
+          "name": "en",
+          "url": "/language/9/"
+        },
+        "name": "National"
+      }
+    ],
+    "pokemon_entries": [
+      {
+        "entry_number": 1,
+        "pokemon_species": {
+          "name": "bulbasaur",
+          "url": "/pokemon-species/1/"
+        }
+      },
+      {
+        "entry_number": 2,
+        "pokemon_species": {
+          "name": "ivysaur",
+          "url": "/pokemon-species/2/"
+        }
+      }
+    ],
+    "region": null,
+    "version_groups": []
+  }
+}

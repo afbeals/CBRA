@@ -1,0 +1,14 @@
+// EXTENDERS
+%page-layout {
+  height: 100%;
+}
+
+%pokedex-header {
+  font-size: 2.5em;
+  text-shadow: 1px 2px 3px #000000, 0 0 0 black, -1px 1px 0 #000000,
+    1px 1px 0 white;
+  color: #ffffff;
+  letter-spacing: 0px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}

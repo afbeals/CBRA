@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BaseStats should match BaseStats to snapshot 1`] = `
+<div
+  class="parent__base"
+  data-testid="details-baseStats"
+>
+  <div
+    class="parent__base__info"
+  >
+    <div
+      class="section section--info"
+    >
+      <span
+        class="section__title"
+      >
+        height:
+      </span>
+      <p
+        class="section__content"
+      />
+    </div>
+    <div
+      class="section section--info"
+    >
+      <span
+        class="section__title"
+      >
+        weight:
+      </span>
+      <p
+        class="section__content"
+      />
+    </div>
+    <div
+      class="section section--types"
+    />
+  </div>
+</div>
+`;

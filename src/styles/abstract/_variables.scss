@@ -1,0 +1,63 @@
+// Timing
+$transitionTimer: 0.75s;
+
+// Colors
+$color-blue: #2d7ac5;
+$color-red: #cc0000;
+$color-green: #1ea01e;
+$color-orange: #f3c118;
+$color-white: #ffffff;
+$color-black: #000000;
+
+// states
+$state-success: $color-green;
+$state-warning: $color-orange;
+$state-error: $color-red;
+
+// App
+$root-background: #ffffff;
+$app-background: #ffffff;
+$app-primary: #7e57c2;
+$app-primary-light: #b085f5;
+$app-primary-dark: #4d2c91;
+$app-secondary: #58a1e0;
+$app-secondary-light: #8ed2ff;
+$app-secondary-dark: #1073ae;
+$app-red: #ff4747;
+
+// Font
+$font-color-black: rgba(0, 0, 0, 0.702);
+$font-color-grey: rgb(102, 102, 102);
+$font-color-white: rgba(255, 255, 255, 0.98);
+$font-color-hint: rgba(233, 233, 233, 0.984);
+
+// Package Variables
+
+// Elements
+$shadow-color: #8e8888;
+$border-color: #d2d2d2;
+$shadow: 1px 1px 4px $shadow-color;
+$inset-border: 2px inset $border-color;
+$outset-border: 2px outset $border-color;
+
+// Media Size
+$xs-screen: 0px;
+$sm-screen: 600px;
+$md-screen: 960px;
+$lg-screen: 1280px;
+$xl-screen: 1920px;
+
+// Exports
+:export {
+  primary: $app-primary;
+  primaryLight: $app-primary-light;
+  primaryDark: $app-primary-dark;
+  secondary: $app-secondary;
+  secondaryLight: $app-secondary-light;
+  secondaryDark: $app-secondary-dark;
+  fontPrimary: $font-color-white;
+  fontSecondary: $font-color-black;
+  fontHint: $font-color-hint;
+  fontDisabled: $font-color-grey;
+  appBackground: $app-background;
+}

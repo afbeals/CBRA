@@ -1,0 +1,32 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "usage",
+        "corejs": 3
+      }
+    ],
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-optional-chaining",
+    "@babel/plugin-proposal-nullish-coalescing-operator",
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": {
+          "~Components": "./src/components",
+          "~Modules": "./src/modules",
+          "~Pages": "./src/pages",
+          "~Styles": "./src/styles",
+          "~Util": "./src/util",
+          "~Images": "./public/images"
+        }
+      }
+    ]
+  ]
+}

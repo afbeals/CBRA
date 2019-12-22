@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextField should match TextField to snapshot 1`] = `
+<div
+  class="MuiFormControl-root MuiTextField-root textField MuiFormControl-marginDense"
+  data-testid="textfield"
+>
+  <div
+    class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl MuiInputBase-marginDense MuiFilledInput-marginDense"
+  >
+    <input
+      aria-invalid="false"
+      class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputMarginDense MuiFilledInput-inputMarginDense"
+      type="text"
+      value=""
+    />
+  </div>
+</div>
+`;

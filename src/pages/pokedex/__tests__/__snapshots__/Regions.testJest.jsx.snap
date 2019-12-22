@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Regions should match Regions to snapshot 1`] = `
+<div
+  class="parent__regions"
+  data-testid="pokedex-regions"
+>
+  <div
+    class="parent__regions__decor"
+  >
+    <div
+      class="parent__regions__decor__light"
+    >
+      <div
+        class="trim"
+      >
+        <div
+          class="bulb red"
+        />
+      </div>
+    </div>
+    <div
+      class="parent__regions__decor__light"
+    >
+      <div
+        class="trim"
+      >
+        <div
+          class="bulb yellow"
+        />
+      </div>
+    </div>
+    <div
+      class="parent__regions__decor__light"
+    >
+      <div
+        class="trim"
+      >
+        <div
+          class="bulb green"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="parent__regions__list"
+  >
+    <div
+      class="parent__regions__list__region noAnim"
+    >
+      <button
+        class="parent__regions__list__region__button active"
+        tabindex="0"
+        type="button"
+      >
+        national
+      </button>
+    </div>
+  </div>
+</div>
+`;

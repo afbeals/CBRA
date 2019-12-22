@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login should match Login to snapshot 1`] = `
+<div
+  class="login"
+  data-testid="login"
+>
+  <div
+    class="login__group"
+  >
+    <h2
+      class="login__group__title"
+    >
+      Pokedex
+       
+      <span
+        class="login__group__title__version"
+      >
+        1.0
+      </span>
+    </h2>
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained login__group__button MuiButton-containedPrimary"
+      data-testid="button"
+      tabindex="0"
+      type="button"
+    >
+      <span
+        class="MuiButton-label"
+      >
+        Access
+        <span
+          class="MuiButton-endIcon MuiButton-iconSizeMedium"
+        >
+          <i
+            class="fas fa-fan"
+          />
+        </span>
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;

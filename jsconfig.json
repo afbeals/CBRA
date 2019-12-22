@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "allowSyntheticDefaultImports": false,
+    "baseUrl": "./",
+    "paths": {
+      "~Components/*": ["src/components/*"],
+      "~Modules/*": ["src/modules/*"],
+      "~Pages/*": ["src/pages/*"],
+      "~Styles/*": ["src/styles/*"],
+      "~Util/*": ["src/util/*"],
+      "~Images/*": ["public/images/*"]
+    }
+  },
+  "exclude": ["node_modules", "build"]
+}

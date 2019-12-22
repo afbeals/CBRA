@@ -1,0 +1,147 @@
+{
+  "regions": {
+    "count": 14,
+    "results": [
+      { "name": "national", "url": "/pokedex/1/" },
+      { "name": "kanto", "url": "/pokedex/2/" },
+      {
+        "name": "original-johto",
+        "url": "/pokedex/3/"
+      },
+      { "name": "hoenn", "url": "/pokedex/4/" },
+      {
+        "name": "original-sinnoh",
+        "url": "/pokedex/5/"
+      },
+      {
+        "name": "extended-sinnoh",
+        "url": "/pokedex/6/"
+      },
+      {
+        "name": "updated-johto",
+        "url": "/pokedex/7/"
+      },
+      {
+        "name": "original-unova",
+        "url": "/pokedex/8/"
+      },
+      {
+        "name": "updated-unova",
+        "url": "/pokedex/9/"
+      },
+      {
+        "name": "conquest-gallery",
+        "url": "/pokedex/11/"
+      },
+      {
+        "name": "kalos-central",
+        "url": "/pokedex/12/"
+      },
+      {
+        "name": "kalos-coastal",
+        "url": "/pokedex/13/"
+      },
+      {
+        "name": "kalos-mountain",
+        "url": "/pokedex/14/"
+      },
+      {
+        "name": "updated-hoenn",
+        "url": "/pokedex/15/"
+      }
+    ]
+  },
+  "pokedex": {
+    "1": {
+      "descriptions": [
+        {
+          "description": "Entire National dex",
+          "language": {
+            "name": "en",
+            "url": "/language/9/"
+          }
+        }
+      ],
+      "id": 1,
+      "is_main_series": true,
+      "name": "national",
+      "names": [
+        {
+          "language": {
+            "name": "en",
+            "url": "/language/9/"
+          },
+          "name": "National"
+        }
+      ],
+      "pokemon_entries": [
+        {
+          "entry_number": 1,
+          "pokemon_species": {
+            "name": "bulbasaur",
+            "url": "/pokemon-species/1/"
+          }
+        },
+        {
+          "entry_number": 2,
+          "pokemon_species": {
+            "name": "ivysaur",
+            "url": "/pokemon-species/2/"
+          }
+        }
+      ],
+      "region": null,
+      "version_groups": []
+    },
+    "2": {
+      "descriptions": [
+        {
+          "description": "Red/Blue/Yellow Kanto dex",
+          "language": {
+            "name": "en",
+            "url": "/language/9/"
+          }
+        }
+      ],
+      "id": 2,
+      "is_main_series": true,
+      "name": "kanto",
+      "names": [
+        {
+          "language": {
+            "name": "en",
+            "url": "/language/9/"
+          },
+          "name": "Kanto"
+        }
+      ],
+      "pokemon_entries": [
+        {
+          "entry_number": 1,
+          "pokemon_species": {
+            "name": "bulbasaur",
+            "url": "/pokemon-species/1/"
+          }
+        }
+      ],
+      "region": {
+        "name": "kanto",
+        "url": "/region/1/"
+      },
+      "version_groups": [
+        {
+          "name": "red-blue",
+          "url": "/version-group/1/"
+        },
+        {
+          "name": "yellow",
+          "url": "/version-group/2/"
+        },
+        {
+          "name": "firered-leafgreen",
+          "url": "/version-group/7/"
+        }
+      ]
+    }
+  }
+}

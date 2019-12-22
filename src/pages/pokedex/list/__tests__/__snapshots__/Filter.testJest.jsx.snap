@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filter should match Filter to snapshot 1`] = `
+<div
+  class="parent__filters"
+  data-testid="list_filter"
+>
+  <div
+    class="parent__filters__decor"
+  >
+    <div
+      class="parent__filters__decor__light"
+    >
+      <div
+        class="trim"
+      >
+        <div
+          class="bulb"
+        />
+      </div>
+    </div>
+    <div
+      class="parent__filters__decor__sound"
+    >
+      <div
+        class="bar"
+      />
+      <div
+        class="bar"
+      />
+      <div
+        class="bar"
+      />
+    </div>
+  </div>
+  <div
+    class="MuiFormControl-root MuiTextField-root textField MuiFormControl-marginDense"
+    data-testid="textfield"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense MuiInputLabel-filled"
+      data-shrink="false"
+    >
+      Pokemon Name...
+    </label>
+    <div
+      class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl MuiInputBase-marginDense MuiFilledInput-marginDense"
+    >
+      <input
+        aria-invalid="false"
+        class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputMarginDense MuiFilledInput-inputMarginDense"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;

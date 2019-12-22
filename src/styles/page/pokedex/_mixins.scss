@@ -1,0 +1,9 @@
+// Pokedex regions
+@mixin regionDelay($number, $value) {
+  @for $i from 1 through ($number) {
+    &:nth-child(#{$i}) {
+      -webkit-animation-delay: (#{$i * $value});
+      animation-delay: (#{$i * $value});
+    }
+  }
+}

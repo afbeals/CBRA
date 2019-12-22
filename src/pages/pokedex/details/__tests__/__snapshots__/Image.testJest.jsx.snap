@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image should match Image to snapshot 1`] = `
+<div
+  class="parent__image"
+  data-testid="details-image"
+>
+  <div
+    class="parent__image__gender"
+  >
+    <button
+      class="MuiButtonBase-root MuiIconButton-root male iconButton MuiIconButton-colorSecondary Mui-disabled MuiIconButton-sizeSmall Mui-disabled"
+      data-testid="iconButton"
+      disabled=""
+      role="button"
+      tabindex="-1"
+      type="button"
+    >
+      <span
+        class="MuiIconButton-label"
+      >
+        <i
+          class="fas fa-mars"
+        />
+      </span>
+    </button>
+    <button
+      class="MuiButtonBase-root MuiIconButton-root female iconButton MuiIconButton-colorPrimary Mui-disabled MuiIconButton-sizeSmall Mui-disabled"
+      data-testid="iconButton"
+      disabled=""
+      role="button"
+      tabindex="-1"
+      type="button"
+    >
+      <span
+        class="MuiIconButton-label"
+      >
+        <i
+          class="fas fa-venus"
+        />
+      </span>
+    </button>
+  </div>
+  <div
+    class="parent__image__flipper"
+  >
+    <button
+      class="MuiButtonBase-root MuiIconButton-root iconButton MuiIconButton-colorPrimary Mui-disabled MuiIconButton-sizeSmall Mui-disabled"
+      data-testid="iconButton"
+      disabled=""
+      role="button"
+      tabindex="-1"
+      type="button"
+    >
+      <span
+        class="MuiIconButton-label"
+      >
+        <i
+          class="fas fa-sync-alt"
+        />
+      </span>
+    </button>
+  </div>
+</div>
+`;
